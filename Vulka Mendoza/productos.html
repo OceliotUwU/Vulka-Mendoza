@@ -1,0 +1,542 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Productos - Vulcanizadora</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <style>
+            .filtro {
+                display: none;
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .card {
+                border: 1px solid #aaa;
+                padding: 10px;
+                width: 22%;
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Productos Disponibles</h1>
+
+        <button id="mostrar-filtros">Mostrar filtros</button>
+
+        <!-- Filtro -->
+        <section class="filtro" id="filtro">
+            <form id="filtro-form">
+                <label>Marca:
+                    <select name="marca">
+                        <option value="">Todas</option>
+                        <option value="Michelin">Michelin</option>
+                        <option value="Continental">Continental</option>
+                        <option value="Goodyear">Goodyear</option>
+                        <option value="General Tire">General Tire</option>
+                        <option value="Bridgestone">Bridgestone</option>
+                        <option value="Yokohama">Yokohama</option>
+                        <option value="Toyo Tires">Toyo Tires</option>
+                    </select>
+                </label>
+                <label>Ancho:
+                    <select name="ancho">
+                        <option value="">Todos</option>
+                        <option value="165">165</option>
+                        <option value="175">175</option>
+                        <option value="185">185</option>
+                        <option value="195">195</option>
+                        <option value="205">205</option>
+                        <option value="215">215</option>
+                        <option value="225">225</option>
+                        <option value="235">235</option>
+                    </select>
+                </label>
+                <label>Perfil:
+                    <select name="perfil">
+                        <option value="">Todos</option>
+                        <option value="55">55</option>
+                        <option value="60">60</option>
+                        <option value="65">65</option>
+                        <option value="70">70</option>
+                    </select>
+                </label>
+                <label>Rin:
+                    <select name="rin">
+                        <option value="">Todos</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                    </select>
+                </label>
+                <label>Estado:
+                    <select name="estado">
+                        <option value="">Todos</option>
+                        <option value="Nueva">Nueva</option>
+                        <option value="Seminueva">Seminueva</option>
+                        <option value="Usada en buen estado">Usada en buen estado</option>
+                    </select>
+                </label>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        
+        <!-- Contenedor de productos -->
+        <div class="card-container">
+
+             <!-- Fila 1 -->
+             <div class="card fade-in">
+                <h3>Michelin 235/65R13</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 215/65R17</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 165/65R15</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 195/70R14</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="card fade-in">
+                <h3>Goodyear 205/70R18</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Toyo Tires 205/55R13</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 245/70R17</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 195/60R16</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 3 -->
+            <div class="card fade-in">
+                <h3>Yokohama 245/60R19</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Goodyear 185/75R19</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 245/65R18</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 205/70R18</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 4 -->
+            <div class="card fade-in">
+                <h3>Continental 175/55R19</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Michelin 225/60R13</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Yokohama 165/65R15</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Goodyear 215/55R14</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 5 -->
+            <div class="card fade-in">
+                <h3>Yokohama 225/70R19</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Toyo Tires 245/60R17</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Toyo Tires 245/55R14</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 165/60R15</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 6 -->
+            <div class="card fade-in">
+                <h3>Michelin 185/70R19</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Bridgestone 225/65R14</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Yokohama 195/75R16</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 225/75R13</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 7 -->
+            <div class="card fade-in">
+                <h3>Continental 235/75R18</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Bridgestone 185/70R19</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 195/70R13</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Michelin 225/70R15</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 8 -->
+            <div class="card fade-in">
+                <h3>Bridgestone 215/60R17</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 165/75R19</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Michelin 205/60R18</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 245/65R17</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 9 -->
+            <div class="card fade-in">
+                <h3>Bridgestone 255/70R18</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Bridgestone 185/65R16</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 225/60R15</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Michelin 185/55R19</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 10 -->
+            <div class="card fade-in">
+                <h3>Goodyear 205/55R13</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Toyo Tires 205/55R16</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Goodyear 165/55R18</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 175/70R14</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 11 -->
+            <div class="card fade-in">
+                <h3>Goodyear 215/65R14</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Michelin 205/60R19</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 185/65R15</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 165/75R18</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 12 -->
+            <div class="card fade-in">
+                <h3>Bridgestone 185/75R16</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Bridgestone 205/70R17</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 205/75R16</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Yokohama 205/60R19</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 13 -->
+            <div class="card fade-in">
+                <h3>Bridgestone 255/70R16</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Goodyear 175/65R18</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Bridgestone 165/70R16</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Bridgestone 175/70R16</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 14 -->
+            <div class="card fade-in">
+                <h3>Toyo Tires 205/60R14</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Goodyear 225/70R16</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Yokohama 245/60R19</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Toyo Tires 195/55R18</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+
+            <!-- Fila 15 -->
+            <div class="card fade-in">
+                <h3>Bridgestone 235/60R16</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Continental 245/65R17</h3>
+                <p>Usada en buen estado</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>Toyo Tires 185/55R16</h3>
+                <p>Nueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+            <div class="card fade-in">
+                <h3>General Tire 255/65R15</h3>
+                <p>Seminueva</p>
+                <button>Agregar al carrito</button>
+                <button>Comprar ya</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>© 2025 Vulka Mendoza</footer>
+
+    <script>
+    document.getElementById("mostrar-filtros").addEventListener("click", () => {
+        const filtro = document.getElementById("filtro");
+        filtro.style.display = filtro.style.display === "none" ? "block" : "none";
+    });
+
+    document.getElementById("filtro-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const marca = this.marca.value.toLowerCase();
+        const ancho = this.ancho.value;
+        const perfil = this.perfil.value;
+        const rin = this.rin.value;
+        const estado = this.estado.value.toLowerCase();
+
+        let encontrados = 0;
+
+        document.querySelectorAll(".card").forEach(card => {
+            const texto = card.querySelector("h3").textContent.toLowerCase();
+            const estadoTexto = card.querySelector("p").textContent.toLowerCase();
+
+            const coincideMarca = !marca || texto.includes(marca);
+            const coincideAncho = !ancho || texto.includes(`${ancho}/`);
+            const coincidePerfil = !perfil || texto.includes(`/${perfil}`);
+            const coincideRin = !rin || texto.includes(`r${rin}`);
+            const coincideEstado = !estado || estadoTexto.includes(estado);
+
+            if (coincideMarca && coincideAncho && coincidePerfil && coincideRin && coincideEstado) {
+                card.style.display = "block";
+                encontrados++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        if (encontrados === 0) {
+            alert("No hay piezas con esas características. Intenta con otro filtro o contáctanos para cotizar una medida en la sección de contacto.");
+        }
+    });
+</script>
+</body>
+</html>
